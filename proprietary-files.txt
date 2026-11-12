@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Samsung Galaxy S24 Ultra (S928BXXS6DZF2)
+## are from Samsung Galaxy Z Fold6 (F956BXXS2CYL5); originally S24 Ultra (S928BXXS6DZF2)
 #
 # Current blobs with deps disabled:
 # vendor.qti.hardware.display.composer-service depends on multiple versions of the same aidl_interface: android.hardware.graphics.composer3-V2-ndk-source, android.hardware.graphics.composer3-V3-ndk-source
@@ -114,7 +114,7 @@ vendor/lib64/lib_SamsungRec_08020.so
 vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib64/lib_SoundAlive_play_plus_ver800.so
-vendor/lib64/lib_SoundBooster_ver2000.so
+vendor/lib64/lib_SoundBooster_ver2050.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 vendor/lib64/soundfx/libaudiosaplus_sec.so
@@ -153,29 +153,11 @@ vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
 vendor/etc/DsgpPolicy.csv
 vendor/etc/aip/config/PCC_Config-timestamp
 vendor/etc/aip/config/pcc_config.json
-vendor/etc/aip/model/1129_dummy_1441_cached.dlc
-vendor/etc/aip/model/CIGSOL_SWISP_200M_v1.6.2_Exp18_e12850_592x4176_A16W8_cached.dlc
-vendor/etc/aip/model/CIGSOL_fp32_ver220923_HTP_FP16_cached.dlc
-vendor/etc/aip/model/ModelSet2_AIMFISP-timestamp
-vendor/etc/aip/model/ModelSet2_eraw_AIMFISP-timestamp
 vendor/etc/aip/model/ModelSet_AIMFISP-timestamp
-vendor/etc/aip/model/ModelSet_AISR-timestamp
 vendor/etc/aip/model/ModelSet_eraw_AIMFISP-timestamp
-vendor/etc/aip/model/ModelSet_v-timestamp
-vendor/etc/aip/model/aiisp_1x_C2C_cached.dlc
-vendor/etc/aip/model/aiisp_1x_T2C_Indoor_cached.dlc
-vendor/etc/aip/model/aiisp_1x_T2C_Outdoor_cached.dlc
-vendor/etc/aip/model/aiisp_1x_ll_C2C_cached.dlc
-vendor/etc/aip/model/aiisp_2x_C2C_cached.dlc
-vendor/etc/aip/model/aiisp_2x_ll_C2C_cached.dlc
-vendor/etc/aip/model/aiisp_4x_C2C_cached.dlc
-vendor/etc/aip/model/mfisp_eraw_model_mf_Tetra_RGB_fp16.dlc
 vendor/etc/aip/model/mfisp_eraw_model_nl_Tetra_RGB_fp16.dlc
 vendor/etc/aip/model/mfisp_model_ll_Tetra_RGB_fp16.dlc
-vendor/etc/aip/model/mfisp_model_mf_Tetra_RGB_fp16.dlc
 vendor/etc/aip/model/mfisp_model_nl_Tetra_RGB_fp16.dlc
-vendor/etc/aip/model/mfisp_tmodel_ll_Tetra_RGB_fp16.dlc
-vendor/etc/aip/model/mfisp_tmodel_nl_Tetra_RGB_fp16.dlc
 vendor/etc/beauty/settings.dat
 vendor/etc/external_camera_config.xml
 vendor/etc/init/camera.unihal.rc
@@ -214,18 +196,7 @@ vendor/lib64/camera/com.samsung.sensor.s5k3k1.so
 vendor/lib64/camera/com.samsung.sensor.s5k3lu.so
 vendor/lib64/camera/com.samsung.sensor.s5kgn3.so
 vendor/lib64/camera/com.samsung.sensor.s5khp2.so
-vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5khp2.bin
-vendor/lib64/camera/com.samsung.sensormodule.12_lsi_s5k3lu_full.bin
-vendor/lib64/camera/com.samsung.sensormodule.1_lsi_s5k3lu.bin
-vendor/lib64/camera/com.samsung.sensormodule.2_sony_imx564.bin
-vendor/lib64/camera/com.samsung.sensormodule.3_sony_imx754_x3.bin
-vendor/lib64/camera/com.samsung.sensormodule.6_sony_imx754_x10.bin
-vendor/lib64/camera/com.samsung.sensormodule.6_sony_imx854.bin
 vendor/lib64/camera/com.samsung.tuned.lsi_s5k3lu.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5khp2.bin
-vendor/lib64/camera/com.samsung.tuned.sony_imx564.bin
-vendor/lib64/camera/com.samsung.tuned.sony_imx754.bin
-vendor/lib64/camera/com.samsung.tuned.sony_imx854.bin
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
 vendor/lib64/camera/components/com.qti.hvx.addconstant.so
@@ -315,8 +286,6 @@ vendor/lib64/camera/components/com.ss.stats.aec.so
 vendor/lib64/camera/components/com.ss.stats.af.so
 vendor/lib64/camera/components/com.ss.stats.awb.so
 vendor/lib64/camera/components/com.ss.stats.pdlib.so
-vendor/lib64/camera/components/libTsAeFront_e3.so;FIX_SONAME
-vendor/lib64/camera/components/libTsAe_e3.so;FIX_SONAME
 vendor/lib64/camera/components/libcamxevainterface.so
 vendor/lib64/camera/components/libdepthmapwrapper_itof.so
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
@@ -376,7 +345,6 @@ vendor/lib64/hw/com.qti.chi.override.so;DISABLE_DEPS
 vendor/lib64/libAIHighRes_interface.so
 vendor/lib64/libAIMFISP.camera.samsung.so
 vendor/lib64/libAIMFISP_core.camera.samsung.so
-vendor/lib64/libAISR_core.camera.samsung.so
 vendor/lib64/libAISegmenter_v2.camera.samsung.so
 vendor/lib64/libAImode_wrapper.camera.samsung.so
 vendor/lib64/libAIphoto_core.camera.samsung.so
@@ -421,8 +389,6 @@ vendor/lib64/libPersonal_capture.camera.samsung.so
 vendor/lib64/libPersonal_core.camera.samsung.so
 vendor/lib64/libPetDetector_interface.so
 vendor/lib64/libPetDetector_v1.camera.samsung.so
-vendor/lib64/libPortraitDistortionCorrection.arcsoft.so
-vendor/lib64/libPortraitDistortionCorrectionCali.arcsoft.so
 vendor/lib64/libPortraitSolution.camera.samsung_preview.so
 vendor/lib64/libQRInterface.camera.samsung.so
 vendor/lib64/libQrDetector.uniplugin@1.0.so
@@ -442,17 +408,9 @@ vendor/lib64/libSnpeGpu.so;FIX_SONAME
 vendor/lib64/libSnpeHtpV75Stub.so
 vendor/lib64/libTetraMFP10.camera.samsung.so
 vendor/lib64/libTetraMFP10Tuning.camera.samsung.so
-vendor/lib64/libTetraSR10.camera.samsung.so
-vendor/lib64/libTetraSR10Tuning.camera.samsung.so
-vendor/lib64/libTsAf_E123Q.so;FIX_SONAME
-vendor/lib64/libTsAwbFront_E123.so
-vendor/lib64/libTsAwb_E3.so
 vendor/lib64/libTxPwrJni.so
-vendor/lib64/libUltraWideDistortionCorrection.camera.samsung.so
-vendor/lib64/libUltraWideDistortionCorrection.uniplugin@1.0.so
 vendor/lib64/libUniPluginUtils.so
 vendor/lib64/libUniScaler.uniplugin@1.0.so
-vendor/lib64/libWideDistortionCorrection.camera.samsung.so
 vendor/lib64/lib_profiler.so
 vendor/lib64/libai_denoiser_interface.so
 vendor/lib64/libaidenoiser.so
@@ -542,7 +500,6 @@ vendor/lib64/liblivefocus_preview_engine.so
 vendor/lib64/liblivefocus_preview_interface.so
 vendor/lib64/liblocaltm_capture.uniplugin@1.0.so
 vendor/lib64/liblocaltm_preview.uniplugin@1.0.so
-vendor/lib64/libmaskdetection.uniplugin@1.0.so
 vendor/lib64/libmcaimegpu.samsung.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmfGhostDetection.so
@@ -554,9 +511,6 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmpbase.so
-vendor/lib64/libmulticam_image_optical_zoom.so
-vendor/lib64/libmulticam_optical_zoom_control.so
-vendor/lib64/libmulticam_video_optical_zoom.so
 vendor/lib64/libmultiobject_tracker.so
 vendor/lib64/libndfilter_preview.uniplugin@1.0.so
 vendor/lib64/libopencv.so
@@ -825,14 +779,14 @@ vendor/lib64/libsfp_sensor.so
 vendor/lib64/libsfp_teegw.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
 
-# Gatekeeper - from S928BXXS4BYH2
-vendor/bin/hw/android.hardware.gatekeeper-service|feee846c425f4a5eeb1d4a1338edc926123bee96
-vendor/etc/init/android.hardware.gatekeeper-service.rc|ff8adc96d2332ef7f626ee8d7c21ef5931ffa362
-vendor/lib64/hw/gatekeeper.mdfpp.so|416793af5e924306f35cb8c172581c61bc605e53
-vendor/lib64/hw/libspuqtigatekeeper.so|06423aa7917b36dab73244999b9f3bdcb15a2692
-vendor/lib64/libgpt.so|f9ac83b0ff19de813b8c0ac56e9f61f3808acdfc
-vendor/lib64/librpmb.so|67c93c7242844bbced4b0e0577ed9294df3fdd1a
-vendor/lib64/libssd.so|50912a1dfe1a2be71b74c5975b7873655d3d4ee2
+# Gatekeeper - from F956BXXS2BYGB (must match the One UI 7 BL/TZ on the device)
+vendor/bin/hw/android.hardware.gatekeeper-service
+vendor/etc/init/android.hardware.gatekeeper-service.rc
+vendor/lib64/hw/gatekeeper.mdfpp.so
+vendor/lib64/hw/libspuqtigatekeeper.so
+vendor/lib64/libgpt.so
+vendor/lib64/librpmb.so
+vendor/lib64/libssd.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss-aidl-service-qti
@@ -917,15 +871,15 @@ vendor/lib64/libllvm-qgl.so
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
 
-# Hermes - from S928BXXS4BYH2
-vendor/bin/hermesd|d70c066b2611a21e043946ca1baf9d2a9e2bbc84
-vendor/etc/init/hermesd.rc|c79cb8a52d464a66951cb4ffea87d7f8182052e9
-vendor/lib64/libhermes.so|cf041df7142998b99d077bc00fd100cd6fbd4061
-vendor/lib64/libhermes_bdbridge.so|7e2b57ee008cf0f6c13aa1bee4d3685824f41348
-vendor/lib64/libhermes_cred.so|90ceed371d6e84818958ec2131f0d7705d42b1e1
-vendor/lib64/libhwvault.so|bc9a8d59cb5dcc42a6bc7307053e896a9ada70ef
-vendor/lib64/libshctrl.so|04430bd3f807ab1a42319c6cb5a601cbd6fb699a
-vendor/lib64/vendor.samsung.hardware.security.hermes-V1-ndk.so|b439f1b1c4396ab9fbcec3ce5fda1d2073efacb7
+# Hermes - from F956BXXS2BYGB (must match the One UI 7 BL/TZ on the device)
+vendor/bin/hermesd
+vendor/etc/init/hermesd.rc
+vendor/lib64/libhermes.so
+vendor/lib64/libhermes_bdbridge.so
+vendor/lib64/libhermes_cred.so
+vendor/lib64/libhwvault.so
+vendor/lib64/libshctrl.so
+vendor/lib64/vendor.samsung.hardware.security.hermes-V1-ndk.so
 
 # HyPer
 vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk.so
@@ -939,18 +893,18 @@ vendor/bin/system_dlkm_modprobe.sh
 vendor/bin/vendor_modprobe.sh
 vendor/etc/init/hw/init.qti.kernel.rc
 
-# Keymint - from S928BXXS4BYH2
-vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service-qti|5aecd6d9d240ad5a49867391b03dd7028ea7e14f
-vendor/bin/hw/android.hardware.security.keymint-service-spu-qti|f57b8abe52267fab3b0edf1e95a37d4eba7bf740|48373d62a0746ac9248c7e987f22c051cd295714
-vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc|425c229ff5bed146529dd0f60a6f9004c3b2090a
-vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service-qti.rc|23773b1927bb40dc185ea173766015236437b580|83973fa3ff2611804f98a6a78331eeb6d41c8c5f
-vendor/lib64/libskeymint10device.so|cdd3dddf6c6211d0022b4bef8e0b88f1a0de6f83
-vendor/lib64/libskeymint_cli.so|55d5f5cd70a129a6e2a59a72125beab25c537350|d8a79b41bcf93171efce1934a34068b163876bf4
-vendor/lib64/libspcom.so|666472ecc62fea6587bbfdfdfc499ab56649272b
-vendor/lib64/libspukeymint.so|b839f5886b1f0077ef2a8082378a2ff2d89f1268|6e94e70a91ecc72ff091c16433cfe3b75ea35b22
-vendor/lib64/libspukeymintdeviceutils.so|75e5d46f92f495f498095e39a20eb4503139473d
-vendor/lib64/libspukeymintutils.so|f7ad83b2ded71fc0f341cb3afdad56f91058dcfe
-vendor/lib64/vendor.samsung.hardware.keymint-V3-ndk.so|9c58af7f50e733bb6646963cb341f90cad8d17ee
+# Keymint - from F956BXXS2BYGB (must match the One UI 7 BL/TZ on the device)
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service-qti
+vendor/bin/hw/android.hardware.security.keymint-service-spu-qti
+vendor/etc/init/android.hardware.security.keymint-service-spu-qti.rc
+vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service-qti.rc
+vendor/lib64/libskeymint10device.so
+vendor/lib64/libskeymint_cli.so
+vendor/lib64/libspcom.so
+vendor/lib64/libspukeymint.so
+vendor/lib64/libspukeymintdeviceutils.so
+vendor/lib64/libspukeymintutils.so
+vendor/lib64/vendor.samsung.hardware.keymint-V3-ndk.so
 
 # Media
 system_ext/lib64/libmmosal.so
@@ -1108,7 +1062,7 @@ vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.smp2p.rc
 vendor/etc/init/vendor.qti.tftp.rc
 
-# RIL
+# RIL - from F956BXXS2BYGB (must match the modem firmware on the device)
 vendor/bin/hw/rild
 vendor/bin/qms
 vendor/etc/init/init.vendor.onebinary.rc
@@ -1137,7 +1091,7 @@ vendor/lib64/libVendorSemDataProps.so
 vendor/lib64/libVendorSemTelephonyProps.so
 vendor/lib64/libengmode_client.so
 vendor/lib64/libril_sem.so
-vendor/lib64/libsec-ril.so:vendor/lib64/libsec-ril-impl.so;FIX_SONAME|5f1ef8b2400cedad2c32e8e65deaca1d0cbe12a5|f66bd8e4a895104290fd3ec5917a9f5f1c2c5a1a
+vendor/lib64/libsec-ril.so:vendor/lib64/libsec-ril-impl.so;FIX_SONAME
 vendor/lib64/libsec_semRil.so
 vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libvkmanager_vendor.so
@@ -1148,15 +1102,15 @@ vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 
-# RIL - UIM
+# RIL - UIM - from F956BXXS2BYGB (must match the modem firmware on the device)
 product/etc/permissions/UimService.xml
 product/framework/uimservicelibrary.jar
 
-# Secure element - from S928BXXS4BYH2
-vendor/lib64/libese-grdg.so|ed93ea374a4805ca9757b47cc03ea6a191512a58
-vendor/lib64/libsec_esek.so|a4878f6e7b10e208f4939b37667e748e34395ee8
-vendor/lib64/libsec_semHalTlc.so|209eafba3bb41879d7df4beef82a87a39e5cd50f
-vendor/lib64/libspictrl.so|c3f80e6bbe12e97ead76a30c805f29b420ba6bef
+# Secure element - from F956BXXS2BYGB (must match the One UI 7 BL/TZ on the device)
+vendor/lib64/libese-grdg.so
+vendor/lib64/libsec_esek.so
+vendor/lib64/libsec_semHalTlc.so
+vendor/lib64/libspictrl.so
 
 # Secure processor
 vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0
