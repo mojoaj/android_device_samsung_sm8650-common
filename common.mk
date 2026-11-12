@@ -123,7 +123,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
-# q6q: removed packages from non-public repos: libsamsungSoundbooster_plus, SoundBoosterStage, SamsungEsimSwitcher, ImsStack, ImsStackOverlay
+# q6q: removed packages from non-public repos: libsamsungSoundbooster_plus, SoundBoosterStage, ImsStack, ImsStackOverlay
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -131,6 +131,7 @@ PRODUCT_PACKAGES += \
 
 # eUICC
 PRODUCT_PACKAGES += \
+    SamsungEsimSwitcher \
     SamsungEuicc
 
 PRODUCT_COPY_FILES += \
