@@ -41,10 +41,8 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsamsungSoundbooster_plus \
     libvolumelistener \
     SamsungDAP \
-    SoundBoosterStage \
     sound_trigger.primary.pineapple
 
 TARGET_EXCLUDES_AUDIOFX := true
@@ -125,13 +123,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
+# q6q: removed packages from non-public repos: libsamsungSoundbooster_plus, SoundBoosterStage, SamsungEsimSwitcher, ImsStack, ImsStackOverlay
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
 # eUICC
 PRODUCT_PACKAGES += \
-    SamsungEsimSwitcher \
     SamsungEuicc
 
 PRODUCT_COPY_FILES += \
@@ -209,12 +208,11 @@ PRODUCT_PACKAGES += \
 
 # AOSP userspace IMS and framework bearer services
 $(call inherit-product, packages/modules/ImsMedia/imsmedia.mk)
-$(call inherit-product, packages/apps/CarrierSettings/carrier_settings.mk)
-$(call soong_config_set_bool,imsstack_namespace,use_android16_telephony_compat,true)
+# q6q: CarrierSettings/imsstack repo not public; revisit in radio stage
+# $(call inherit-product, packages/apps/CarrierSettings/carrier_settings.mk)
+# $(call soong_config_set_bool,imsstack_namespace,use_android16_telephony_compat,true)
 
 PRODUCT_PACKAGES += \
-    ImsStack \
-    ImsStackOverlay \
     Iwlan \
     QualifiedNetworksService
 

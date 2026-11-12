@@ -149,6 +149,9 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera
+vendor/lib64/libtriplecam_image_optical_zoom.so
+vendor/lib64/libtriplecam_optical_zoom_control.so
+vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
 vendor/etc/DsgpPolicy.csv
 vendor/etc/aip/config/PCC_Config-timestamp
@@ -1242,3 +1245,9 @@ vendor/etc/init/wifi_qcom.rc
 vendor/etc/wifi/kiwi_v2/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
+
+# Galaxy Z Fold6 (q6q) dependencies of common blobs
+vendor/lib64/libegis_fp_normal_sensor_test.so
+vendor/lib64/libgf_in_system_lib.so
+vendor/lib64/libsns_device_mode_stub.so
+vendor/lib64/libsynaFpSensorTestNwd.so
