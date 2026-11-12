@@ -21,7 +21,8 @@
             \"sim-slot-mappings\": [
                 {
                     \"devices\": [
-                        \"e3q\"
+                        \"e3q\",
+                        \"q6q\"
                     ],
                     \"esim-slot-ids\": [
                         1
