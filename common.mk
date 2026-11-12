@@ -243,6 +243,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+# Health: Samsung nodes (from LineageOS sm8550-common). Without these the service
+# waits forever for generic nodes and system_server is killed by the watchdog.
+$(call soong_config_set,lineage_health,fast_charge_value_none,1)
+$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
+$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/batt_slate_mode)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
+
 # Media
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/codec2/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
