@@ -59,7 +59,7 @@ PRODUCT_PACKAGES += \
 
 TARGET_EXCLUDES_AUDIOFX := true
 
-$(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/sm8650-common:lib_SoundBooster_ver2000)
+$(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/sm8650-common:lib_SoundBooster_ver2050)
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
 
