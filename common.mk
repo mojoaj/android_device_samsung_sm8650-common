@@ -41,8 +41,10 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libsamsungSoundbooster_plus \
     libvolumelistener \
     SamsungDAP \
+    SoundBoosterStage \
     sound_trigger.primary.pineapple
 
 TARGET_EXCLUDES_AUDIOFX := true
@@ -123,7 +125,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
 
-# q6q: removed packages from non-public repos: libsamsungSoundbooster_plus, SoundBoosterStage, ImsStack, ImsStackOverlay
+# q6q: removed packages from non-public repos: ImsStack, ImsStackOverlay
 
 # DRM
 PRODUCT_PACKAGES += \
