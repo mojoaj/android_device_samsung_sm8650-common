@@ -926,7 +926,7 @@ vendor/lib64/vendor.samsung.hardware.media.mpp-V5-ndk.so
 # NFC
 vendor/etc/libese-nxp.conf
 vendor/etc/libnfc-nxp.conf
-vendor/lib64/nfc_nci_nxpsn_ecp.so
+vendor/lib64/nfc_nci_nxpsn.so
 
 # NFC firmware
 vendor/firmware/nfc/libsn300u_fw.so
