@@ -812,29 +812,29 @@ vendor/lib64/vendor.qti.gnss-V5-ndk.so
 vendor/lib64/vendor.qti.gnss-service.so
 vendor/lib64/vendor.samsung.hardware.gnss-V2-ndk_platform.so
 
-# Graphics (Adreno)
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
-vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
-vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libOpenCL_adreno.so
-vendor/lib64/libadreno_app_profiles.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libkcl.so
-vendor/lib64/libkernelmanager.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libllvm-qgl.so
+# Graphics (Adreno) - from S928BXXU6EZIF (S24 Ultra, Adreno V@0762.48.1; kgsl is unchanged from upstream). GPU firmware stays Fold6 (q6q tree)
+vendor/lib64/egl/eglSubDriverAndroid.so|84586205ac1bce16da3d0c5f84ad1b0b0dad21fe
+vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|e6177dc5e3f89b6dae41fdb34f968254105ac025
+vendor/lib64/egl/libGLESv1_CM_adreno.so|9c667937b0d5e51a674d56e112684fea796c4e42
+vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|4b307d8ad16d2c2b998741bec2008f5b03e9403e
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so|b0ad9d15b8f1a87311371fa0ef9fae9a23ebbd56
+vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|b754367f7547601982d789e8373bfc0d95ba2e16
+vendor/lib64/egl/libq3dtools_esx.so|9b17d6eb306f3e36ae7cb924350845cf8fa5b4d3
+vendor/lib64/libCB.so|888f9c9c17dd0f5b93e9a18841782c7fc833b27f
+vendor/lib64/libOpenCL.so|07c0984f0c662768fb16c5927d086105a734f7b0
+vendor/lib64/libOpenCL_adreno.so|1e421fd8f826398303f6a9000e08bdbed6f15b29
+vendor/lib64/libadreno_app_profiles.so|a14f0937fe42fb7166057f3b63df19be595bf3a4
+vendor/lib64/libadreno_utils.so|792b761fdeb39efeb9164d2c48d5dda53c83407d
+vendor/lib64/libgpudataproducer.so|29630590c6f93acd51a2b2c49222d756c94006e6
+vendor/lib64/libgsl.so|98f1c6f157e2bc9dc2d69475c521c4a8434ba3b4
+vendor/lib64/libkcl.so|45a8b846ad785ceb036244422c06814cc914a066
+vendor/lib64/libkernelmanager.so|4f7f1d28ec6b90c719c5191dcb2b2dda58d725a3
+vendor/lib64/libllvm-glnext.so|76213bcf9e6f51a946bf72ca75755b19162ccd7b
+vendor/lib64/libllvm-qcom.so|35cadaacccb8860d57d76e23ba51fbb9b85c915b
+vendor/lib64/libllvm-qgl.so|89f9f4a0cb4b39914caa8d0525458103306dd57c
 
-# Graphics (Vulkan)
-vendor/lib64/hw/vulkan.adreno.so
+# Graphics (Vulkan) - from S928BXXU6EZIF (S24 Ultra, Adreno V@0762.48.1; kgsl is unchanged from upstream). GPU firmware stays Fold6 (q6q tree)
+vendor/lib64/hw/vulkan.adreno.so|35532b512a2e710597afa8494e5bdd61bb4639a0
 
 # Hermes - from F956BXXS2BYGB (must match the One UI 7 BL/TZ on the device)
 vendor/bin/hermesd
