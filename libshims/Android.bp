@@ -9,3 +9,9 @@ cc_library_shared {
     srcs: ["libhypervintf/libhypervintf.cpp"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libsfp_ion_shim",
+    srcs: ["libsfp_ion_shim/libsfp_ion_shim.cpp"],
+    vendor: true,
+}
