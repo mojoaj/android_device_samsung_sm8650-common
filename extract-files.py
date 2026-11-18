@@ -77,9 +77,7 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/libsensorndkbridge.so'): blob_fixup()
         .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
     (
-        'vendor/bin/qcc-vendor',
         'vendor/bin/qms',
-        'vendor/bin/xtra-daemon',
         'vendor/lib64/libcne.so',
         'vendor/lib64/libqcc_sdk.so',
         'vendor/lib64/libqms_client.so'
@@ -87,6 +85,13 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbinder_shim.so'),
     ('vendor/lib64/libsfp_teegw.so'): blob_fixup()
         .add_needed('libsfp_ion_shim.so'),
+    # Don't launch XTRA (downloads assistance data from Qualcomm servers),
+    # the LOWI Wi-Fi location service, or engine-service (not shipped).
+    'vendor/etc/izat.conf': blob_fixup()
+        .regex_replace(
+            r'(PROCESS_NAME=(?:lowi-server|xtra-daemon|engine-service)\r?\nPROCESS_ARGUMENT=[^\r\n]*\r?\n)PROCESS_STATE=ENABLED',
+            r'\1PROCESS_STATE=DISABLED',
+        ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

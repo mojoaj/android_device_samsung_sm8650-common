@@ -201,7 +201,6 @@ ro.vendor.extension_library=libqti-perfd-client.so
 persist.vendor.rcs.singlereg.feature=1
 
 # Radio
-persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.enableadvancedscan=true
 ro.radio.noril=no
 ro.telephony.default_cdma_sub=0
@@ -228,9 +227,6 @@ vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=0
-
-# UWB
-ro.vendor.uwb.feature.chipname=sr200
 
 # WiFi
 wifi.aware.interface=wifi-aware0

@@ -607,7 +607,6 @@ vendor/etc/ssg/tz_whitelist.json
 vendor/lib64/libtaautoload.so
 
 # Data
-vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/qti
 vendor/bin/shsusrd
@@ -619,8 +618,6 @@ vendor/etc/init/dataadpl.rc
 vendor/etc/init/dataqti.rc
 vendor/etc/init/shsusrd.rc
 vendor/etc/init/tlpd.rc
-vendor/etc/seccomp_policy/atfwd@2.0.policy
-vendor/etc/vintf/manifest/atfwd-saidl.xml
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
@@ -637,7 +634,6 @@ vendor/lib64/libtlpd_crypto.so
 vendor/lib64/libtlpd_internal.so
 vendor/lib64/libtlpd_logger.so
 vendor/lib64/libxml.so
-vendor/lib64/vendor.qti.hardware.radio.atfwd-V1-ndk.so
 
 # Diag
 vendor/bin/diag-router
@@ -756,21 +752,17 @@ vendor/lib64/libssd.so
 # GNSS
 vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
-vendor/bin/xtra-daemon
 vendor/etc/batching.conf
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gps.conf
 vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
 vendor/etc/init/loc-launcher.rc
 vendor/etc/izat.conf
-vendor/etc/lowi.conf
 vendor/etc/sap.conf
 vendor/etc/sec_config
 vendor/etc/seccomp_policy/gnss@2.0-base.policy
 vendor/etc/seccomp_policy/gnss@2.0-edgnss-daemon.policy
 vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy
-vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
 vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
 vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
@@ -802,7 +794,6 @@ vendor/lib64/liblocationservice.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_common.so
-vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libpal_net_if.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsys_info_cache.so
@@ -845,9 +836,6 @@ vendor/lib64/libhermes_cred.so
 vendor/lib64/libhwvault.so
 vendor/lib64/libshctrl.so
 vendor/lib64/vendor.samsung.hardware.security.hermes-V1-ndk.so
-
-# HyPer
-vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk.so
 
 # Kernel
 vendor/bin/init.kernel.post_boot-pineapple.sh
@@ -947,17 +935,12 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # QCC
-vendor/bin/qcc-vendor
-vendor/etc/init/init.qccvendor.rc
-vendor/etc/vintf/manifest/vendor.qti.qccvndhal_aidl-service.xml
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqcc_sdk.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so
-vendor/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
-vendor/lib64/vendor.qti.qccvndhal_aidl-halimpl.so
 
 # QESDK
 vendor/lib64/libqesdk2_0.so
@@ -1086,9 +1069,7 @@ vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.qsh.so
 
 # SSR
-vendor/bin/ssr_diag
 vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
 
 # Sensor configs
 vendor/etc/sensors/config/lanai_default_sensors.json
@@ -1126,11 +1107,6 @@ vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket_vendor.so
 vendor/lib64/libqcbor.so
 
-# TEE
-vendor/lib64/libGPMTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-
 # Thermal
 vendor/bin/hw/vendor.samsung.hardware.thermal-service
 vendor/etc/btcon.json
@@ -1151,46 +1127,13 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# Trusted UI
-vendor/bin/hw/vendor.qti.hardware.trustedui-aidl-service-qti
-vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti
-vendor/bin/trusteduilistener
-vendor/etc/init/trusteduilistener.rc
-vendor/etc/init/vendor.qti.hardware.trustedui-aidl-service-qti.rc
-vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.trustedui-aidl-service.xml
-vendor/lib64/libTouchInputVM.so
-vendor/lib64/libTrustedInput.so
-vendor/lib64/libTrustedInputAIDL.so
-vendor/lib64/libTrustedInputTZ.so
-vendor/lib64/libTrustedInputUtils.so
-vendor/lib64/libTrustedUI.so
-vendor/lib64/libTrustedUIAIDL.so
-vendor/lib64/libTrustedUITZ.so
-vendor/lib64/libTrustedUIVM.so
+# Trusted UI (only the libraries Widevine needs)
 vendor/lib64/libcpion.so
-vendor/lib64/libsi.so
 vendor/lib64/libtrustedapploader.so
-vendor/lib64/vendor.qti.hardware.trustedui-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
-vendor/lib64/vendor.qti.hardware.trustedui@1.1.so
-vendor/lib64/vendor.qti.hardware.trustedui@1.2.so
 
 # UBWCP
 vendor/bin/ubwcconvert
 vendor/lib64/libubwcp.so
-
-# UWB
-vendor/bin/hw/vendor.samsung.hardware.uwb@1.0-service
-vendor/etc/init/init.vendor.uwb.rc
-vendor/etc/init/vendor.samsung.hardware.uwb@1.0-service.rc
-vendor/etc/libuwb-countrycode.conf
-vendor/etc/libuwb-feature.conf
-vendor/etc/libuwb-nxp.conf
-vendor/etc/libuwb-uci.conf
-vendor/etc/uwb_key
-vendor/etc/vintf/manifest/vendor.samsung.hardware.uwb@1.0-service.xml
-vendor/lib64/uwb_uci.hal.so
 
 # Widevine DRM
 vendor/apex/com.google.android.widevine.nonupdatable.apex
